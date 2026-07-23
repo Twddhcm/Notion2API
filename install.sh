@@ -2,7 +2,7 @@
 set -Eeuo pipefail
 
 REPOSITORY="${N2A_REPOSITORY:-Twddhcm/Notion2API}"
-RELEASE="${N2A_RELEASE:-v1.0.8-neutral.3}"
+RELEASE="${N2A_RELEASE:-v1.0.8-neutral.4}"
 INSTALL_DIR="${N2A_INSTALL_DIR:-/opt/notion2api}"
 PORT="${N2A_PORT:-8787}"
 TIMEZONE="${TZ:-Asia/Shanghai}"

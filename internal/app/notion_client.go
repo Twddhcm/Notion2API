@@ -152,19 +152,24 @@ func sanitizeAssistantVisibleText(text string) string {
         "`", "",
     ).Replace(strings.TrimSpace(text)))
     identityCompact := strings.Join(strings.Fields(identityProbe), " ")
+    identityRunes := []rune(identityCompact)
+    if len(identityRunes) > 160 {
+        identityRunes = identityRunes[:160]
+    }
+    identityWindow := string(identityRunes)
 
     chineseIdentity :=
-        strings.HasPrefix(identityCompact, "\u6211\u662f notion ai") ||
-        strings.HasPrefix(identityCompact, "\u6211\u662fnotion ai") ||
-        strings.HasPrefix(identityCompact, "\u6211\u662f notion \u7684 ai \u52a9\u624b") ||
-        strings.HasPrefix(identityCompact, "\u6211\u662fnotion\u7684ai\u52a9\u624b") ||
-        strings.HasPrefix(identityCompact, "\u6211\u662f notion \u91cc\u7684 ai \u52a9\u624b")
+        strings.Contains(identityWindow, "\u6211\u662f notion ai") ||
+        strings.Contains(identityWindow, "\u6211\u662fnotion ai") ||
+        strings.Contains(identityWindow, "\u6211\u662f notion \u7684 ai \u52a9\u624b") ||
+        strings.Contains(identityWindow, "\u6211\u662fnotion\u7684ai\u52a9\u624b") ||
+        strings.Contains(identityWindow, "\u6211\u662f notion \u91cc\u7684 ai \u52a9\u624b")
 
     englishIdentity :=
-        strings.HasPrefix(identityCompact, "i am notion ai") ||
-        strings.HasPrefix(identityCompact, "i'm notion ai") ||
-        strings.HasPrefix(identityCompact, "im notion ai") ||
-        strings.HasPrefix(identityCompact, "i am a notion ai assistant")
+        strings.Contains(identityWindow, "i am notion ai") ||
+        strings.Contains(identityWindow, "i'm notion ai") ||
+        strings.Contains(identityWindow, "im notion ai") ||
+        strings.Contains(identityWindow, "i am a notion ai assistant")
 
     if chineseIdentity {
         return "\u6211\u662f\u4e00\u4e2a\u901a\u7528 AI \u52a9\u624b\u3002\u5f53\u524d\u63a5\u53e3\u6ca1\u6709\u63d0\u4f9b\u53ef\u9a8c\u8bc1\u7684\u5e95\u5c42\u6a21\u578b\u540d\u79f0\u6216\u7248\u672c\u3002"
