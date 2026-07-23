@@ -18,14 +18,14 @@
 
 ```bash
 curl -fsSL \
-  https://raw.githubusercontent.com/Twddhcm/Notion2API/v1.0.8-neutral.3/install.sh |
+  https://raw.githubusercontent.com/Twddhcm/Notion2API/v1.0.8-neutral.4/install.sh |
 sudo bash
 ```
 
 安装脚本将自动完成：
 
 1. 安装 Docker Engine 和 Docker Compose
-2. 下载 `v1.0.8-neutral.3` 源码
+2. 下载 `v1.0.8-neutral.4` 源码
 3. 创建 `/opt/notion2api/config` 和 `/opt/notion2api/data`
 4. 生成随机 API Key 和管理密码
 5. 构建并启动容器
@@ -210,5 +210,5 @@ docker compose down
 
 - 上游项目：[GALIAIS/Notion2API](https://github.com/GALIAIS/Notion2API)
 - 定制版本：[Twddhcm/Notion2API](https://github.com/Twddhcm/Notion2API)
-- 发布版本：[v1.0.8-neutral.3](https://github.com/Twddhcm/Notion2API/releases/tag/v1.0.8-neutral.3)
+- 发布版本：[v1.0.8-neutral.4](https://github.com/Twddhcm/Notion2API/releases/tag/v1.0.8-neutral.4)
 - 许可证：[MIT](LICENSE)
