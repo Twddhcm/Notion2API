@@ -42,3 +42,6 @@ frontend/out/
 __tests__/
 WEBUI_DEVELOPMENT_GUIDE.md
 .serena/
+/config/
+*.bak.*
+*.bak

@@ -75,9 +75,195 @@
     "search_scopes": []
   },
   "model_aliases": {
-    "gpt54": "gpt-5.4",
-    "gpt52": "gpt-5.2"
+    "gpt52": "gpt-5.2",
+    "gpt54": "gpt-5.4"
   },
-  "accounts": []
+  "accounts": [],
+  "models": [
+    {
+      "id": "gpt-5.6-sol",
+      "name": "GPT-5.6 Sol",
+      "notion_model": "orange-mousse",
+      "family": "openai",
+      "group": "intelligent",
+      "enabled": true,
+      "aliases": [
+        "gpt56-sol",
+        "orange-mousse"
+      ]
+    },
+    {
+      "id": "gpt-5.6-terra",
+      "name": "GPT-5.6 Terra",
+      "notion_model": "orchid-muffin",
+      "family": "openai",
+      "group": "intelligent",
+      "enabled": true,
+      "aliases": [
+        "gpt56-terra",
+        "orchid-muffin"
+      ]
+    },
+    {
+      "id": "gpt-5.6-luna",
+      "name": "GPT-5.6 Luna",
+      "notion_model": "olive-jellyroll",
+      "family": "openai",
+      "group": "fast",
+      "enabled": true,
+      "aliases": [
+        "gpt56-luna",
+        "olive-jellyroll"
+      ]
+    },
+    {
+      "id": "gpt-5.5",
+      "name": "GPT-5.5",
+      "notion_model": "opal-quince-medium",
+      "family": "openai",
+      "group": "intelligent",
+      "enabled": true,
+      "aliases": [
+        "gpt55",
+        "opal-quince-medium"
+      ]
+    },
+    {
+      "id": "gemini-3.5-flash",
+      "name": "Gemini 3.5 Flash",
+      "notion_model": "vertex-gemini-3.5-flash",
+      "family": "gemini",
+      "group": "fast",
+      "enabled": true,
+      "aliases": [
+        "vertex-gemini-3.5-flash"
+      ]
+    },
+    {
+      "id": "sonnet-5",
+      "name": "Sonnet 5",
+      "notion_model": "angel-cake-high",
+      "family": "anthropic",
+      "group": "intelligent",
+      "enabled": true,
+      "aliases": [
+        "claude-sonnet-5",
+        "angel-cake-high"
+      ]
+    },
+    {
+      "id": "opus-4.7",
+      "name": "Opus 4.7",
+      "notion_model": "apricot-sorbet-high",
+      "family": "anthropic",
+      "group": "intelligent",
+      "enabled": true,
+      "aliases": [
+        "claude-opus-4.7",
+        "opus47",
+        "apricot-sorbet-high"
+      ]
+    },
+    {
+      "id": "opus-4.8",
+      "name": "Opus 4.8",
+      "notion_model": "ambrosia-tart-high",
+      "family": "anthropic",
+      "group": "intelligent",
+      "enabled": true,
+      "aliases": [
+        "claude-opus-4.8",
+        "opus48",
+        "ambrosia-tart-high"
+      ]
+    },
+    {
+      "id": "kimi-k2.6",
+      "name": "Kimi K2.6",
+      "notion_model": "fireworks-kimi-k2.6",
+      "family": "mystery",
+      "group": "intelligent",
+      "enabled": true,
+      "aliases": [
+        "fireworks-kimi-k2.6"
+      ]
+    },
+    {
+      "id": "kimi-k2.7-code",
+      "name": "Kimi K2.7 Code",
+      "notion_model": "fireworks-kimi-k2.7",
+      "family": "mystery",
+      "group": "intelligent",
+      "enabled": true,
+      "aliases": [
+        "fireworks-kimi-k2.7"
+      ]
+    },
+    {
+      "id": "deepseek-v4-pro",
+      "name": "DeepSeek V4 Pro",
+      "notion_model": "baseten-deepseek-v4-pro",
+      "family": "mystery",
+      "group": "intelligent",
+      "enabled": true,
+      "aliases": [
+        "baseten-deepseek-v4-pro"
+      ]
+    },
+    {
+      "id": "glm-5.2",
+      "name": "GLM 5.2",
+      "notion_model": "baseten-glm-5.2",
+      "family": "mystery",
+      "group": "intelligent",
+      "enabled": true,
+      "aliases": [
+        "baseten-glm-5.2"
+      ]
+    },
+    {
+      "id": "grok-4.3",
+      "name": "Grok 4.3",
+      "notion_model": "xigua-mochi-medium",
+      "family": "xai",
+      "group": "intelligent",
+      "enabled": true,
+      "aliases": [
+        "xigua-mochi-medium"
+      ]
+    },
+    {
+      "id": "grok-4.5",
+      "name": "Grok 4.5",
+      "notion_model": "strawberry-whoopiepie",
+      "family": "xai",
+      "group": "intelligent",
+      "enabled": true,
+      "aliases": [
+        "strawberry-whoopiepie"
+      ]
+    },
+    {
+      "id": "grok-build-0.1",
+      "name": "Grok Build 0.1",
+      "notion_model": "xinomavro-cake",
+      "family": "xai",
+      "group": "intelligent",
+      "enabled": true,
+      "aliases": [
+        "xinomavro-cake"
+      ]
+    },
+    {
+      "id": "fable-5",
+      "name": "Fable 5",
+      "notion_model": "acai-budino-high",
+      "family": "anthropic",
+      "group": "intelligent",
+      "enabled": false,
+      "aliases": [
+        "acai-budino-high"
+      ]
+    }
+  ]
 }
-
